@@ -113,11 +113,12 @@ int M_Client::RecvMsg()
 
 //		revData[rlt] = 0x00;
 //		printf("%x",revData);
-		printf("Receive data = \n");
+		printf("Receive data = ");
 		for (int i = 0; i <= 13; i++)
 		{
 			printf("%02X ",revData[i]);
 		}
+		printf("\n");
 		
 	}
 	return rlt;
