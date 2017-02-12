@@ -3,17 +3,9 @@
 #include<iostream>
 #include <conio.h>
 
-
-VOID CALLBACK TimerProc(HWND hwnd,UINT uMsg,UINT idEvent,DWORD dwTime)
-{
-	std::cout << "H" << std::endl;
-	
-}
-
-
 int main()
 {
-	std::cout << "¶ÁÈ¡%MW0µÄÊý¾Ý£¬°´Esc¼üÍË³ö" << std::endl;
+	std::cout << "è¯»å–%MW0çš„æ•°æ®ï¼ŒæŒ‰Escé”®é€€å‡º" << std::endl;
 	int connect_error;
 	M_Client client("192.168.1.223", 502, 1);
 	printf("Waiting to connection\n");
@@ -25,8 +17,8 @@ int main()
 	buf[3] = 0;
 	buf[4] = 0;
 	buf[5] = 6;
-	buf[6] = 1;//´Ó»úID  
-	buf[7] = 3;//ÃüÁî´úÂë  
+	buf[6] = 1;//ä»ŽæœºID  
+	buf[7] = 3;//å‘½ä»¤ä»£ç   
 	buf[8] = 0;
 	buf[9] = 0;
 	buf[10] = 0;
